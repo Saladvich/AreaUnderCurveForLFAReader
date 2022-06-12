@@ -136,12 +136,12 @@ if __name__ == "__main__":
 
                         centroid_y = (coordsT[0] + coordsT[1] + coordsT[2]) / 3
 
-                        plt.fill_between(x, fit, where=(x <= focal + 20) & (x >= focal - 20), color="orange")
+                        plt.fill_between(x, fit, where=(x <= focal + areaRange) & (x >= focal - areaRange), color="orange")
                         plt.scatter(peak_pos, height, color='r', s=12, marker='D', label='Local Maxima')
                         plt.scatter(min_pos, min_height, color='blue', s=12, marker='D', label='Local Minima')
                         plt.scatter(coordsTx, coordsT, color='green', s=15, marker='X', label='Triangle Verticies')
                         plt.scatter(focal, centroid_y, color='green', s=15, marker='o', label='Centroid')
-                        plt.plot([focal-25, focal+25], [centroid_y, centroid_y], marker='o', color='green', label='Range of Integration (±'+areaRange+')')
+                        plt.plot([focal-areaRange, focal+areaRange], [centroid_y, centroid_y], marker='o', color='green', label='Range of Integration (±'+areaRange+')')
 
 
                     except TypeError:
