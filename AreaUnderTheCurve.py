@@ -1,3 +1,7 @@
+#Gupta, R.; Gupta, P.; Wang, S.; Melnykov, A.; Jiang, Q.; Seth, A.; Wang, Z.; Morrissey, J.; George, I.; Gandra, S.; Sinha, P.; Storch, G.; Parikh, B.; Genin, G.; Singamanenei, S.; 
+#Ultrasensitive lateral-flow assays via plasmonically active antibody-conjugated fluorescent nanoparticles. 
+#Nature Biomedical Engineering Accepted For Publication 12/20/2022.
+
 import numpy as np
 import matplotlib.pyplot as plt
 from openpyxl import load_workbook
